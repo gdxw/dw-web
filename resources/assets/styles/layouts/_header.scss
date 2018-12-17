@@ -1,0 +1,12 @@
+.banner {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav a {
+    @extend .nav-link;
+  }
+  .nav li {
+    @extend .nav-item;
+  }
+}
