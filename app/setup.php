@@ -44,9 +44,10 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('顶部菜单', 'sage'),
+        'footer_navigation' => __('低部菜单', 'sage')
     ]);
-
+    
     /**
      * Enable post thumbnails
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
@@ -58,6 +59,16 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
      */
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+    
+    add_theme_support(
+        'custom-logo',
+        array(
+            'height'      => 126,
+            'width'       => 60,
+            'flex-width'  => false,
+            'flex-height' => false,
+        )
+    );
 
     /**
      * Enable selective refresh for widgets in customizer
@@ -71,6 +82,7 @@ add_action('after_setup_theme', function () {
      */
     add_editor_style(asset_path('styles/main.css'));
 }, 20);
+
 
 /**
  * Register sidebars
@@ -128,5 +140,28 @@ add_action('after_setup_theme', function () {
      */
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
-    });
+    });  
 });
+
+/**
+ * banner 设置
+ */
+add_action( 'after_setup_theme', function () {
+    add_theme_support( 'custom-header', apply_filters( 'twentyseventeen_custom_header_args', array(
+		'default-image'      => get_parent_theme_file_uri( '/assets/images/banner.jpg'),
+		'width'              => 1920,
+		'height'             => 980,
+		'flex-height'        => true,
+		'video'              => true,
+		'wp-head-callback'   => 'twentyseventeen_header_style',
+	) ) );
+
+	register_default_headers( array(
+		'default-image' => array(
+			'url'           => '%s/assets/images/banner.jpg',
+			'thumbnail_url' => '%s/assets/images/banner.jpg',
+			'description'   => __( 'Default Header Image', 'twentyseventeen' ),
+		),
+	));  
+});
+

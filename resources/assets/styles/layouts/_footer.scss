@@ -1,0 +1,87 @@
+$footer-color: $gray-300;
+.footer{
+    padding:30px 0 10px 0;
+    background-color: #404040;
+    color: $footer-color;
+    a{
+        color: $footer-color;
+        text-decoration: none;
+        &:hover{
+            // color: lighten($color: $footer-color, $amount: 20%); 
+            color: darken($color: $footer-color, $amount: 20%) 
+        }
+    }
+    .line-border{
+        border-bottom: 1px solid $gray-700;
+    }
+    .friend-link{
+        padding:36px 0;
+        border-bottom: 1px solid $gray-700;
+        ul{
+            @extend .list-unstyled;
+            li{
+                display: inline-block;
+            }
+        }
+        a{
+            display: inline-block;
+            padding: 0 4px;
+        }
+    }
+    .footer-menu{
+        margin: 20px 0;
+        ul{
+            @extend .list-unstyled;
+        }
+        .footer-nav>li{
+            @extend .col-sm;
+            &>a{
+                font-weight: bold;
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+        }
+        .footer-nav{
+            a{
+                display: inline-block;
+            }
+            
+        }
+    }
+    .footer-sidebar{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .widget {
+            @extend .col-sm;
+            &>h3{
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .footer-share{
+        margin-top: 30px;
+        .bdsharebuttonbox{
+            text-align: center;
+            margin-bottom: 0px;
+            li{
+                display: inline-block;
+            }
+            a{
+                background-image: none;
+                padding-left: 0;
+                margin: 6px ;
+                font-size: 20px;
+                &:hover{
+                    color: darken($color: $footer-color, $amount: 20%);
+                }
+            }
+        }
+    }
+    .copyright-info{
+       font-size: 0.6rem;
+    }
+}

@@ -38,12 +38,12 @@ let webpackConfig = {
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        include: config.paths.assets,
-        use: 'eslint',
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.js$/,
+      //   include: config.paths.assets,
+      //   use: 'eslint',
+      // },
       {
         enforce: 'pre',
         test: /\.(js|s?[ca]ss)$/,
@@ -171,16 +171,16 @@ let webpackConfig = {
         context: config.paths.assets,
       },
     }),
-    new webpack.LoaderOptionsPlugin({
-      test: /\.js$/,
-      options: {
-        eslint: { failOnWarning: false, failOnError: true },
-      },
-    }),
-    new StyleLintPlugin({
-      failOnError: !config.enabled.watcher,
-      syntax: 'scss',
-    }),
+    // new webpack.LoaderOptionsPlugin({
+    //   test: /\.js$/,
+    //   options: {
+    //     eslint: { failOnWarning: false, failOnError: true },
+    //   },
+    // }),
+    // new StyleLintPlugin({
+    //   failOnError: !config.enabled.watcher,
+    //   syntax: 'scss',
+    // }),
     new FriendlyErrorsWebpackPlugin(),
   ],
 };
