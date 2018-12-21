@@ -1,3 +1,4 @@
+<h2>xxxx</h2>
 <article @php post_class() @endphp>
   <header>
     <h1 class="entry-title">{{ get_the_title() }}</h1>

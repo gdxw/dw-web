@@ -76,6 +76,11 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('customize-selective-refresh-widgets');
 
+    /** 设置图片大小 */
+    add_image_size( 'long-image', 500, 260, true );
+
+    add_image_size( 'square-image', 200, 200, true );
+    
     /**
      * Use main stylesheet for visual editor
      * @see resources/assets/styles/layouts/_tinymce.scss

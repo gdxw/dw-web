@@ -1,3 +1,4 @@
+<h2>xxxx</h2>
 @php the_content() @endphp
 {!! wp_link_pages([
     'echo' => 0, 
