@@ -12,16 +12,20 @@
         <div class="app-banner__body">
           <h1 class="posts-banner__title">{{ get_the_title() }}</h1>
           <div class="posts-banner__info">
+            @if (get_the_category_list('，', ""))
             <div class="category">
               <span>分类：</span><p>
                   @php echo get_the_category_list('，', "") @endphp
               </p>
             </div>
+            @endif
+            @if (get_the_tag_list('', "，"))
             <div class="tags">
               <span>标签：</span><p>
                   @php echo get_the_tag_list('', "，") @endphp
               </p>
             </div>
+            @endif
           </div>
         </div>
       </div>
