@@ -80,3 +80,16 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+
+
+
+
+add_filter( 'widget_tag_cloud_args', function ( $args ) {
+    $args['largest']  = 1;
+    $args['smallest'] = 1;
+    $args['unit']     = 'em';
+    $args['format']   = 'list';
+
+    return $args;
+});

@@ -3,7 +3,7 @@
   {{ the_custom_header_markup() }}
 </div>
 @endif
-<header class="main-header {{ is_home() ? 'main-header-index' : ''}}">
+<header class="main-header {{ is_home() ? 'main-header-index' : 'main-header-page'}}">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
       @if ( has_custom_logo() )

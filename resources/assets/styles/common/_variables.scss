@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  // primary: #525ddc
+  primary: #0073eb
 );
 
 $font-size-base: 0.875rem;
@@ -10,3 +10,12 @@ $line-height-base: 1.75;
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+$font-family-base: arial,tahoma,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px
+);
+$main-theme-color: #0073eb;

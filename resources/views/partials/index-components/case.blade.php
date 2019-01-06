@@ -21,12 +21,12 @@
                                   <div class="card">
                                       <div class="card-img-top" alt="Card image cap">
                                         <a href="{{ get_permalink() }}">
-                                         @php the_post_thumbnail('long-image') @endphp
-                                          @if('' !== get_the_post_thumbnail() && !is_single())
-                                              @php get_the_post_thumbnail() @endphp
-                                          @else
-                                            <span>{{ get_the_title() }}</span>
-                                          @endif
+                                            @php the_post_thumbnail('long-image') @endphp
+                                            @if('' !== get_the_post_thumbnail() && !is_single())
+                                                @php get_the_post_thumbnail() @endphp
+                                            @else
+                                                <span>{{ get_the_title() }}</span>
+                                            @endif
                                         </a>
                                       </div>
                                       <div class="card-body">

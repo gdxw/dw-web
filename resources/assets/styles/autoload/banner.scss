@@ -32,7 +32,8 @@ $main-color: #4e6cb4;
             color: #fff;
             border-color: #fff;
             &:hover{
-                background-color: rgba($color: #444444, $alpha: 0.8);
+                background-color: #fff;
+                color: #404040;
             }
         }
     }

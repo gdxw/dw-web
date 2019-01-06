@@ -19,16 +19,20 @@
 }
 
 .navbar-nav a {
-  @extend .nav-link; 
+  @extend .nav-link;
 }
 .navbar-nav li {
   @extend .nav-item;
 }
 
 .main-header {
-  background-color: $gray-900;
+  background-color: $black;
   &.main-header-index{
     background-color: transparent;
+  }
+  .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .navbar-brand img{
     width: 126px;
@@ -40,16 +44,20 @@
   }
   .navbar-nav a{
     color: #fff;
-    font-size: 1.2rem;
-    margin:0 10px;
+    font-size: 1.1rem;
+    margin:0 1.4rem;
     position: relative;
+    padding: 1.4rem 0;
+    &:hover{
+      color: $main-theme-color;
+    }
   }
   .menu-item>a::after{
     content: "";
       width: 100%;
-      height: 4px;
+      height: 3px;
       left: 0;
-      top: -18px;
+      top: 0px;
       position: absolute;
       display: block;
       background-color: transparent;
@@ -60,5 +68,20 @@
       background-color: #fff;
     }
   }
+  &.main-header-page{
+    .navbar-brand{
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      img{
+        width: 83px;
+        height: 40px;
+      }
+    }
+    .navbar-nav a{
+      font-size: 1rem;
+      padding: 1.2rem 0;
+    }
+  }
 }
+
 
