@@ -27,6 +27,8 @@
 
 .main-header {
   background-color: $black;
+  position: relative;
+  z-index: 2;
   &.main-header-index{
     background-color: transparent;
   }

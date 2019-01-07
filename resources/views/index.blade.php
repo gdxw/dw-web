@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('banner')
+  <div class="banner-slider">
+    @php
+      echo do_shortcode('[smartslider3 slider=1]');
+    @endphp
+  </div>
   @include('partials.index-components.main-banner')
   @include('partials.index-components.canwe')
   @include('partials.index-components.advantage')

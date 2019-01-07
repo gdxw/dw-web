@@ -1,5 +1,14 @@
 $main-color: #4e6cb4;
+.banner-slider{
+    position: relative;
+    margin-bottom: -192px;
+    margin-top: -76px;
+    z-index: 0;
+    min-height: 300px;
+}
 .main-banner{
+    z-index: 1;
+    position: relative;
     color: #fff;
     text-align: center;
     p{

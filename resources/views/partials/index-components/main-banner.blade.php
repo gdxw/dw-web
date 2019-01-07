@@ -26,12 +26,6 @@ $cars = [
 ]
 @endphp
 <section class="main-banner">
-    <div class="banner-solgin" >
-        <h2><span>推广一个网站</span><span>让全世界了解你</span></h2>
-        <p>SPREAD ONE WEBSITE AND SHOW YOURSELF IN THE WORLD</p>
-        <button type="button" class="btn btn-outline-primary btn-lg">立即进入</button>
-    </div>
-    
     <div class="main-banner-content">
         <div class="container">
             <ul class="nav nav-tabs main-banner-tabs" id="myTab" role="tablist">
