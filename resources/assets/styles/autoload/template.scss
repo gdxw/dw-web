@@ -1,0 +1,23 @@
+// 全屏模版
+.template-full{
+    .wrap{
+        margin: 0;
+    }
+}
+
+.template-page{
+    .wrap{
+        background-color: #efefef;
+        margin: 0;
+        overflow: hidden;
+    }
+    .page-container{
+        position: relative;
+        min-height: 720px;
+        margin: 20px auto;
+    }
+    .page-content{
+        background-color: #fff;
+        padding: 20px;
+    }
+}

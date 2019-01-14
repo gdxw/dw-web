@@ -41,7 +41,7 @@ $cars = [
                             <div>
                                 <i class="iconfont {{$item['icon']}}"></i>
                                 <p><b>{{$item['title']}}</b></p>
-                                <p>{{$item['desc']}}</p>
+                                <p class="tab-desc">{{$item['desc']}}</p>
                             </div>
                         </a>
                     </li>  

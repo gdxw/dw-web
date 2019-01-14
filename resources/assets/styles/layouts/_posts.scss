@@ -1,0 +1,20 @@
+.pagination-nav{
+    margin-top: 20px;
+    a{
+        color: #404040;
+        &:hover{
+            color: lighten($color: $main-theme-color, $amount: 20%)
+        }
+    }
+    .page-item.active .page-link{
+        background-color: #404040;
+        border-color: #404040;
+    }
+}
+
+.breadcrumb-nav{
+    .breadcrumb{
+        background-color: inherit;
+        padding: 0;
+    }
+}

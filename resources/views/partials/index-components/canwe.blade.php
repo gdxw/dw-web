@@ -29,5 +29,6 @@
             </div>
         </div>
     </div>
-    <img class="canwe-image" width="1081" height="432" src="https://ccdn.goodq.top/caches/4a7b7daf436f3e5cb2e29433375ccd5d/aHR0cDovLzU1OWE0NDdjNzMyZWUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi9iNTljNjdiZjE5NmE0NzU4MTkxZTQyZjc2NjcwY2ViYS5qcGc_p_p100_p_3D.jpg" class="front_image  attachment-full" alt="pic01" title="" description="" data-title="pic01" src-img="" style="">
+    <img class="canwe-image" src="@asset('images/bg3.jpg')" 
+        class="front_image  attachment-full">
 </section>

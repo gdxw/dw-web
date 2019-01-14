@@ -31,7 +31,11 @@
   z-index: 2;
   &.main-header-index{
     background-color: transparent;
+    @media (max-width: 768px) {
+      background-color: $black;
+    }
   }
+  
   .navbar{
     padding-top: 0;
     padding-bottom: 0;

@@ -90,3 +90,32 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+if ( !function_exists( 'dw_pagination' ) ) {
+	function dw_pagination(){
+		global $wp_query;
+        $big = 99; // 需要一个不太可能的整数
+		$translated = esc_html__( '页' ); // Supply translatable string
+		$pagination =  paginate_links( array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'current' => max( 1, get_query_var('paged') ),
+            'total' => $wp_query->max_num_pages,
+            'type' => 'array',
+            'prev_text'          => __('<span></span> 上一页'),
+            'next_text'          => __('下一页 <span></span>'),
+            'before_page_number' => '<span class="screen-reader-text">' . $translated . ' </span>'
+		) );  
+        if ( ! empty( $pagination ) ) : ?>
+        <div class="pagination-nav">
+            <ul class="pagination justify-content-center">
+            <?php foreach ( $pagination as $key => $page_link ) : ?>
+            <li class="page-item<?php if ( strpos( $page_link, 'current' ) !== false ) { echo ' active'; } ?>"><?php echo str_replace( 'page-numbers', 'page-link', $page_link ); ?></li>
+            <?php endforeach ?>
+            </ul>
+        </div>
+		<?php endif;
+		echo ob_get_clean();
+	}
+}
+require_once('bootstrap-breadcrumb.php');

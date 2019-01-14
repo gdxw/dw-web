@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm tab-build-text">
+    <div class="col-md tab-build-text">
         <p>云搜营销euso.cn</p>
         <h4>专业建设营销型网站和品牌型网站</h4>
         <div class="media">
@@ -7,7 +7,7 @@
             <p class="media-body">传统的网站结构排版布局及后台服务器问题繁多，以至于客户在选择营销或品牌展示时发现举步维艰。云搜营销切合客户需求，提前解决企业建</p>
         </div>
     </div>
-    <div class="col-sm row">
+    <div class="col-md row">
         <div class="col">
             <div class="card tab-build-card">
                 <div class="card-body text-center">

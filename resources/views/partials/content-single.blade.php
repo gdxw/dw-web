@@ -8,9 +8,9 @@
   <div class="author-time">
     <p class="byline author vcard">
       作者：
-        <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
+        <span rel="author" class="fn">
           {{ get_the_author() }}
-        </a>
+        </span>
       <time class="updated fr" datetime="{{ get_post_time('c', true) }}">{{ get_the_date() }}</time>
     </p>
   </div>

@@ -31,6 +31,7 @@
       </div>
     </aside>
     <div class="container single-content">
+      {!! bootstrap_breadcrumb() !!}
       <div class="row">
         <div class="col-lg-8">
           @include('partials.content-single-'.get_post_type())

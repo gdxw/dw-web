@@ -1,0 +1,16 @@
+.tag, .category, .search{
+    .wrap{
+        background-color: #efefef;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+.list-content{
+    position: relative;
+    min-height: 720px;
+    margin: 20px auto;
+}
+.page-list{
+    background-color: #fff;
+    padding: 20px;
+}

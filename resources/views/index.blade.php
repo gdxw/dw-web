@@ -19,7 +19,7 @@
 <div class="container">
   <setion class="news-market">
     <div class="row">
-      <div class="col-4">
+      <div class="col-md-4">
         <h3>营销学堂</h3>
         <div class="market-content">
           @php 
@@ -35,13 +35,13 @@
           @php wp_reset_query(); @endphp
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-8">
         <h3 class="news-title">新闻咨询</h3>
         <div class="news-content">
           @php 
           $news_args = array(
             'category_name' => 'news',
-            'posts_per_page' => 5
+            'posts_per_page' => 3
           );
           $news_query = new WP_Query($news_args);
           @endphp
@@ -54,5 +54,4 @@
     </div>
   </setion>
 </div>
-{!! get_the_posts_navigation() !!}
 @endsection

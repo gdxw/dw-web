@@ -5,6 +5,10 @@ $main-color: #4e6cb4;
     margin-top: -76px;
     z-index: 0;
     min-height: 300px;
+    @media (max-width: 768px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 .main-banner{
     z-index: 1;
@@ -76,6 +80,12 @@ $main-color: #4e6cb4;
                 border-color: transparent;
                 border-bottom: 4px solid #fff;
             }
+            @media (max-width: 768px) {
+                .tab-desc{
+                    display: none;
+                }
+            }
+            
         }
     }
     .tab-content{
@@ -83,7 +93,6 @@ $main-color: #4e6cb4;
     }
     .main-banner-pannel {
         color: #444444;
-        height: 540px;
         padding: 80px 0 40px 0;
         .tab-build-text{
             text-align: left;
@@ -184,6 +193,7 @@ $main-color: #4e6cb4;
             padding: 40px 46px;
             border-radius: 4px;
             width: 300px;
+            margin: 10px auto;
             .iconfont{
                 font-size: 120px;
                 line-height: 1em;
@@ -271,6 +281,7 @@ $main-color: #4e6cb4;
 .main-canwe{
     background-color: #f2f2f2;
     padding-top: 60px;
+    text-align: center
     p{
         margin: 0;
     }
@@ -287,6 +298,10 @@ $main-color: #4e6cb4;
             font-size: 60px;
             font-weight: 100;
         }
+    }
+    .canwe-image{
+        text-align: center;
+        max-width: 100%;
     }
 }
 
