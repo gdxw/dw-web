@@ -12,7 +12,7 @@
                 <div class="results-content">
                   @if (!have_posts())
                     <div class="not-results">
-                      <img src="@asset('/images/404.svg')" alt="not-results"><span>没有查询到结果</span>
+                      <img src="@asset('images/404.svg')" alt="not-results"><span>没有查询到结果</span>
                     </div>
                   @endif
                   @while(have_posts()) @php the_post() @endphp

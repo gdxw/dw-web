@@ -1,5 +1,5 @@
 <section class="main-case text-center">
-<div class="case-bg"><img src="@asset('/images/bg2.png')" alt=""></div>
+<div class="case-bg"><img src="@asset('images/bg2.png')" alt=""></div>
     <div class="container">
       <div class="case-container">
             <h3 class="section-title">我们的案例</h3>

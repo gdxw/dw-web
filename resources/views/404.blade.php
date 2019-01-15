@@ -5,7 +5,7 @@
     <div class="container page-404">
       <div class="row">
         <div class="col-md-7 error-img">
-          <img src="@asset('/images/404.svg')"/>
+          <img src="@asset('images/404.svg')"/>
         </div>
         <div class="col-md-5 error-content">
             <h2>404</h2>
