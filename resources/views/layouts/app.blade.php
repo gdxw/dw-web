@@ -10,6 +10,7 @@
     </div>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
+    @include('partials.right-toolbar')
     @php wp_footer() @endphp
   </body>
 </html>
