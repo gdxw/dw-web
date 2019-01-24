@@ -36,13 +36,23 @@ $main-color: #4e6cb4;
         margin: 20px 0;
         ul{
             @extend .list-unstyled;
+           
         }
+        
         .footer-nav>li{
             @extend .col-sm;
+            @extend .col-6;
+            margin-top: 20px;
             &>a{
                 font-weight: bold;
                 font-size: 1rem;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                
+            }
+            @media (max-width: 768px) {
+                ul{
+                    margin-left: 16px;
+                } 
             }
         }
         .footer-nav{

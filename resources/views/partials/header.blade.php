@@ -1,6 +1,6 @@
 <header class="main-header {{ is_home() ? 'main-header-index' : 'main-header-page'}}">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
       @if ( has_custom_logo() )
         <div class="navbar-brand">{{ the_custom_logo() }}</div>
       @else
@@ -12,7 +12,7 @@
           aria-controls="navbarNavAltMarkup" 
           aria-expanded="false" 
           aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon iconfont icon-menu"></span>
       </button>
       <div class="collapse"></div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">

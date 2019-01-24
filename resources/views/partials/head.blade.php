@@ -3,5 +3,5 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   @php wp_head() @endphp
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_970545_tsxulf4dmph.css" type="text/css" media="all">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_970545_r10upaxlkxp.css" type="text/css" media="all">
 </head>

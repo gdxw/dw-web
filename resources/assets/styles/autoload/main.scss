@@ -29,7 +29,11 @@ $main-color: #4e6cb4;
     .case-container{
         background-color: #f7f7f7;
         height: 600px;
-    } 
+        @media (max-width: 768px){
+            width: 100%;
+            overflow: hidden;
+        }
+    }
     .slick-case{
         width: 300px * 3;
         margin: 40px auto;

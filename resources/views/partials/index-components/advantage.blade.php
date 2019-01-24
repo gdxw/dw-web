@@ -34,7 +34,7 @@ $advantage = [
         <h3 class="section-title text-center">我们的优势</h3>
         <div class="row">
             @foreach ($advantage as $item)
-                <div class="col-md-4 align-self-center">
+                <div class="col-lg-4 col-md-6 align-self-center">
                     <div class="media advantage-box">
                         <div class="mr-3 ml-1"><i class="box-icon iconfont {{$item['icon']}}"></i></div>
                         <div class="media-body">
