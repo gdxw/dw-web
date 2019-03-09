@@ -21,3 +21,28 @@
         padding: 20px;
     }
 }
+
+.sub-title{
+    h3{
+        margin: 0;
+        P:first-child{
+            color: #5376fb;
+            padding-right: 14px;
+            margin-right: 14px;
+            border-right: 2px solid #c1c1c1;
+            line-height: 34px;
+        }
+        p{
+            color: #c1c1c1;
+            font-weight: 100;
+            margin: 0;
+        }
+    }
+}
+
+.sub-icon-title{
+    padding: 25px;
+    &.active{
+        background-color: #efefef;
+    }
+}

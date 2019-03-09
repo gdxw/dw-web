@@ -17,7 +17,18 @@ export default {
     }))
     $scrollTop.on('click',()=>{
       $('body,html').animate({scrollTop: 0}, 800);
+    });
+
+     let $tabwebTitle = $(".tabweb-title");
+     let $tabwebBody = $(".tabweb-body");
+
+    $tabwebTitle.each(function (index) {
+      $($tabwebTitle[index]).on('click',function(){
+        $tabwebBody.hide();
+        $($tabwebBody[index]).show();
+      })
     })
+    $($tabwebTitle[0]).click();
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

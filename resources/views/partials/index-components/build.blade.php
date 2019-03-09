@@ -18,7 +18,7 @@
                         <li>完善的后台与代码</li>
                         <li>营销推广先人一步</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">了解更多</a>
+                    <a href="/webpage-market" class="btn btn-outline-dark">了解更多</a>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
                         <li>适配电脑手机平板</li>
                         <li>品牌展示先人一步</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">了解更多</a>
+                    <a href="/webpage-brand" class="btn btn-outline-dark">了解更多</a>
                 </div>
             </div>
         </div>
