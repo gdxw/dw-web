@@ -16,6 +16,11 @@ $main-color: #4e6cb4;
     color: #fff;
     text-align: center;
     top: -192px;
+    margin-bottom: -192px;
+    @media (max-width: 768px) {
+        top: inherit;
+        margin-bottom: inherit;
+    }
     p{
         margin: 0;
     }
@@ -430,5 +435,23 @@ $main-color: #4e6cb4;
     .item-title{
         font-size: 1rem;
         color: #4e6cb4;
+    }
+    @media (max-width: 768px){
+        .advantage-box{
+            display: block;
+            padding: 14px 10px; 
+            height: 170px;
+            text-align: center;
+            .media-body{
+                padding: 6px;
+            }
+            .mr-3{
+                margin-right: 0.25rem !important;
+            }
+        }
+        .box-icon{
+            font-size: 30px; 
+        }
+        
     }
 }

@@ -104,12 +104,17 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
-        'name'          => __('Footer', 'sage'),
+        'name'          => __('页尾', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
 
+    register_sidebar([
+        'name'          => __('友情链接', 'sage'),
+        'id'            => 'sidebar-footer-full'
+    ] + $config);
+
     register_sidebar( array(
-		'name'          => __( 'Sidebar', 'sage' ),
+		'name'          => __( '侧边栏', 'sage' ),
 		'id'            => 'sidebar-single',
 		'description'   => __( '文章的页面侧边栏', 'sage' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',

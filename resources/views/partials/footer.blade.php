@@ -1,27 +1,7 @@
 <footer class="content-info footer">
   <div class="container">
-    <div class="friend-link">
-        <div class="media">
-          <b class="mr-3">友情链接：</b>
-          <div class="media-body">
-            <div class="d-flex flex-wrap">
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-              <a href="#">云搜网站建设</a>
-            </div>
-          </div>
-        </div>
+    <div class="footer-full">
+        @php dynamic_sidebar('sidebar-footer-full') @endphp
     </div>
     
     <div class="footer-menu">

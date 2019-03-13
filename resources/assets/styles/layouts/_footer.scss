@@ -18,18 +18,33 @@ $main-color: #4e6cb4;
     .line-border{
         border-bottom: 1px solid $gray-700;
     }
-    .friend-link{
-        padding:36px 0;
-        border-bottom: 1px solid $gray-700;
-        ul{
-            @extend .list-unstyled;
-            li{
-                display: inline-block;
+    .footer-full{
+        .widget{
+            padding:36px 0;
+            border-bottom: 1px solid $gray-700;
+            @extend .media;
+            h3{
+                @extend .mr-3;
+                font-size: 14px;
+                line-height: 1.75;
+                font-weight: bold;
             }
         }
-        a{
-            display: inline-block;
-            padding: 0 4px;
+        .textwidget{
+            @extend .media-body;
+            ul{
+                @extend .list-unstyled;
+                margin: 0;
+                li{
+                    display: inline-block;
+                    border: none;
+                    padding:0;
+                }
+            }
+            a{
+                display: inline-block;
+                padding: 0 4px;
+            }
         }
     }
     .footer-menu{
@@ -38,7 +53,6 @@ $main-color: #4e6cb4;
             @extend .list-unstyled;
            
         }
-        
         .footer-nav>li{
             @extend .col-sm;
             @extend .col-6;
