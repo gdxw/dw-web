@@ -25,6 +25,11 @@
   @extend .nav-item;
 }
 
+.template-fullop{
+  .main-header{
+    background-color: transparent; 
+  }
+}
 .main-header {
   background-color: $black;
   position: relative;
