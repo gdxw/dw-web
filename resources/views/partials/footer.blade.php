@@ -1,4 +1,4 @@
-<footer class="content-info footer">
+﻿<footer class="content-info footer">
   <div class="container">
     <div class="footer-full">
         @php dynamic_sidebar('sidebar-footer-full') @endphp
@@ -47,7 +47,7 @@
       </script>
     </div>
     <div class="copyright-info text-center">
-      <p>© 2018 佛山市云搜网络科技有限公司 版权所有 粤ICP备88888888号-1</p>
+      <p>© 2018 佛山市云搜网络科技有限公司 版权所有 <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备19023962号</a></p>
     </div>
   </div>
 </footer>
