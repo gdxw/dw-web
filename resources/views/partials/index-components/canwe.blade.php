@@ -29,6 +29,6 @@
             </div>
         </div>
     </div>
-    <img class="canwe-image" src="@asset('images/bg3.jpg')" 
+    <img class="canwe-image" src="@asset('images/bg3.png')" 
         class="front_image  attachment-full">
 </section>
